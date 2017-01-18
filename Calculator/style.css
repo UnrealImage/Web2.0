@@ -1,0 +1,46 @@
+/*对整个计算器设定大小并进行置中*/
+.calculator {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*计算器标题的文本设置*/
+.title {
+	text-align: center;
+	color: green;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+/*计算器主体边框*/
+.main-body {
+	border-style: solid;
+	border-width: 4px;
+}
+/*计算器显示屏设置*/
+#display {
+	width: 555px;
+	height: 40px;
+	margin: 3% 3% 3% 3%;
+	border-style: solid;
+	border-color: gray;
+	border-width: 2px;
+	background-color: white;
+	font-size: 25px;
+	text-align: right;
+}
+/*键盘整体位置设置*/
+.keyboard {
+	margin: 3% 3% 3% 3%;
+}
+/*键盘行间设置*/
+.row {
+	margin-bottom: 2%;
+}
+/*每个按键统一样式*/
+.key {
+	font-size: 30px;
+	height: 100px;
+	width: 133px;
+}
