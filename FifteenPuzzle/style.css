@@ -1,0 +1,111 @@
+/*标题*/
+h1 {
+	text-align: center;
+}
+/*四行四列位置*/
+.col-1 { left: 0%; }
+.col-2 { left: 25%; }
+.col-3 { left: 50%; }
+.col-4 { left: 75%; }
+.row-1 { top: 0%; }
+.row-2 { top: 25%; }
+.row-3 { top: 50%; }
+.row-4 { top: 75%; }
+
+/*游戏区域*/
+#puzzle {
+	margin-left: auto;
+	margin-right: auto;
+	height: 352px;
+	width: 352px;
+	position: relative;
+}
+/*每块拼图*/
+.puzzle-piece {
+	float: left;
+	height: 88px;
+	width: 88px;
+	background: url(assets/background.jpg);
+	position: absolute;
+	transition: all 0.3s ease-in-out;
+}
+/*空块*/
+#blank {
+	float: left;
+	height: 88px;
+	width: 88px;
+	position: absolute;
+	background-color: white;
+	border-width: 0px;
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+}
+
+/*每块拼图位置*/
+.position-0 { top: 0px; left: 0px; }
+.position-1 { top: 0px; left: 88px; }
+.position-2 { top: 0px; left: 176px; }
+.position-3 { top: 0px; left: 264px; }
+.position-4 { top: 88px; left: 0px; }
+.position-5 { top: 88px; left: 88px; }
+.position-6 { top: 88px; left: 176px; }
+.position-7 { top: 88px; left: 264px; }
+.position-8 { top: 176px; left: 0px; }
+.position-9 { top: 176px; left: 88px; }
+.position-10 { top: 176px; left: 176px; }
+.position-11 { top: 176px; left: 264px; }
+.position-12 { top: 264px; left: 0px; }
+.position-13 { top: 264px; left: 88px; }
+.position-14 { top: 264px; left: 176px; }
+.position-15 { top: 264px; left: 264px; }
+
+/*拼图背景图片位置*/
+.background-0 { background-position: 0% 0%; }
+.background-1 { background-position: 25% 0%; }
+.background-2 { background-position: 50% 0%; }
+.background-3 { background-position: 75% 0%; }
+.background-4 { background-position: 0% 25%; }
+.background-5 { background-position: 25% 25%; }
+.background-6 { background-position: 50% 25%; }
+.background-7 { background-position: 75% 25%; }
+.background-8 { background-position: 0% 50%; }
+.background-9 { background-position: 25% 50%; }
+.background-10 { background-position: 50% 50%; }
+.background-11 { background-position: 75% 50%; }
+.background-12 { background-position: 0% 75%; }
+.background-13 { background-position: 25% 75%; }
+.background-14 { background-position: 50% 75%; }
+.background-15 { background-position: 75% 75%; }
+
+/*提示时拼图块的变形*/
+.hint-animation {
+	border-color: blue;
+	border-width: 4px;
+	z-index: 10;
+}
+
+/*按钮容器*/
+#button-container {
+	height: 40px;
+	width: 440px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*开始等按钮形状*/
+.game-operation-button {
+	display: inline-block;
+	height: 40px;
+	width: 120px;
+	margin-left: 20px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: blue;
+	box-shadow: 1px 1px 3px blue;
+}
+
+/*额外信息*/
+.extra-info {
+	text-align: center;
+}
